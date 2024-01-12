@@ -18,7 +18,7 @@
                     <button>Contact now</button>
                 </div>
                 <div class="col-md-6 col-12 d-md-block d-none">
-                    <div class="profile text-center d-none">
+                    <div class="profile text-center">
                         <img src="../assets/images/hero-profile.png" alt="profile">
                     </div>
                 </div>
