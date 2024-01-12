@@ -1,0 +1,16 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+* ,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    
+    background-image: url('../assets/images/pixels.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 80%;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
