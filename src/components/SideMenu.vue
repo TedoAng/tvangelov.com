@@ -53,17 +53,17 @@ const submitForm = async() => {
         </div>
         <div class="body">
             <h4>ABOUT US</h4>
-            <p>Lorem ipsum dolor, 
-                sit amet consectetur 
-                adipisicing elit. Mollitia, 
-                consequatur? Lorem ipsum 
-                dolor sit amet consectetur 
-                adipisicing elit. Illum, 
-                dignissimos!
+            <p>
+                Ready to take the next step? Contact me now for a personalized 
+                consultation and propel your digital presence forward. 
+                Let's make it happen together!
             </p>
             <h4>GET IN TOUCH</h4>
             <div v-if="formData.sent">
-                <h4>Message sent, we will contact you soon. Thanks!</h4>
+                <div class="thanks-msg">
+                    <h4>Message sent, we will contact you soon.</h4>
+                    <h3>Thanks!</h3>
+                </div>
             </div>
             <form v-else id="demo-form" action="" @submit.prevent="submitForm">
                 <div class="position-relative">
@@ -182,6 +182,11 @@ const submitForm = async() => {
             background-color: #55E6A5;
             font-weight: 500;
             margin-bottom: 30px;
+        }
+    }
+    .thanks-msg {
+        h4 {
+            color: #55E6A5;
         }
     }
    }
