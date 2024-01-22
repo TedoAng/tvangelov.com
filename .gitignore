@@ -354,3 +354,5 @@ MigrationBackup/
 
 # all .env files
 *.env
+
+dist/
