@@ -10,7 +10,6 @@ export default defineConfig({
     vue(), 
     svgLoader(),
     VitePWA({
-      manifest: {
         registerType: 'autoUpdate',
         devOptions: {
           enabled: true
@@ -19,9 +18,16 @@ export default defineConfig({
           clientsClaim: true,
           skipWaiting: true
         },
+        manifest: {
+        name: "HackerWeb",
+        short_name: "HackerWeb",
+        start_url: ".",
+        display: "standalone",
+        background_color: "#333",
+        description: "A readable Hacker News app.",
         icons: [
           {
-            src: "./assets/images/icon512.png",
+            src: "./src/assets/images/icon512.png",
             sizes: "512x512",
             type: "image/png",
             purpose: "any maskable"
