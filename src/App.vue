@@ -2,7 +2,7 @@
     import Navigation from './components/Navigation.vue';
     import Hero from './components/Hero.vue';
     import SideMenu from './components/SideMenu.vue';
-    import { Footer, Services, Newsletter } from './components';
+    import { Footer, Services, Newsletter, HorizontalTechs } from './components';
     import { ref, onMounted, reactive } from 'vue';
 
     const loadSideBar = ref(false);
@@ -28,6 +28,7 @@
         <Navigation @open-side="show"/>
         <Hero/>
         <Services class="service"/>
+        <HorizontalTechs/>
         <Newsletter/>
         <Footer/>
         <Transition>
